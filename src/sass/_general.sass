@@ -1,3 +1,5 @@
+body
+    background: #203748
 .nav 
     height: 57px
     background: #f04949
@@ -28,6 +30,7 @@
                 border-radius: 35px
                 &:hover
                     background: #203748
+                    box-shadow: 0 0 15px #2eb374
                 &:nth-child(4)
                     margin-right: 0
                 &_links
@@ -42,3 +45,53 @@
                 width: 22px
                 height: 22px
                 margin-right: 5px
+.active
+    background: #203748
+    box-shadow: 0 0 30px #2eb374
+.active_text
+        color: #ffffff
+
+.section1
+    &_block
+        display: flex
+        padding: 30px 0 0 0
+        &_ava
+            img
+                width: 200px
+                height: 186px
+        &_text
+            &_header
+                font-size: 35px
+                color: #2d9b68
+                font-weight: 700
+                margin: 15px 0 0 25px
+            &_subheader 
+                color: #ffffff
+                margin-left: 25px
+                font-size: 30px
+                font-weight: 500
+            &_p
+                color: #ffffff
+                font-size: 30px
+                font-weight: 400
+                margin: 30px 0 0 25px
+
+.footer 
+    background: #355267
+    min-height: 80px
+    position: absolute
+    bottom: 0
+    width: 100%
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        &_nik
+            color: #ffffff
+            margin-top: 25px
+        &_contacts
+            color: #ffffff
+            margin-top: 25px
+            border: none
+            background: none
+            text-decoration: uppercase
+        
