@@ -1,21 +1,11 @@
-'use strict';
-let profile = document.querySelector('.section1');
-let button1 = document.querySelectorAll('.nav_wrapper_block_wrapperlogo_links')[1];
-let wrapper1 = document.querySelectorAll('.nav_wrapper_block_wrapperlogo')[1];
-let selectLit;
+$(document).ready(function(){
 
-button1.addEventListener('click', function(event) {
-    let elem = event.target;
-    if (elem.className !== 'nav_wrapper_block_wrapperlogo') {
-        return;
-    }
-    active(elem);
+    $('div.nav_wrapper_block').on('click', 'div.nav_wrapper_block_wrapperlogo:not(.active)', function() {
+        $(this)
+          .addClass('active').siblings().removeClass('active')
+          .closest('div.tabs').find('div.section_block').removeClass('content_active').eq($(this).index()).addClass('content_active');
+      });
+
 });
 
-function active(name) {
-    if (selectLit) {
-        selectLit.classList.remove('active');
-    }
-    selectLit = name;
-    selectLit.classList.add('active');
-}
+

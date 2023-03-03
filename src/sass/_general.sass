@@ -46,16 +46,10 @@ body
                 width: 22px
                 height: 22px
                 margin-right: 5px
-.active
-    background: #203748
-    box-shadow: 0 0 30px #2eb374
-    color: #ffffff 
-    a 
-        color: #ffffff
 
-.section1
+.section
     &_block
-        display: flex
+        display: none
         padding: 30px 0 0 0
         &_ava
             img
@@ -104,6 +98,33 @@ body
                         width: 25px
                         height: 25px
 
+.section
+    &_block
+        &_skill 
+            margin-top: 50px
+            justify-content: center
+        &_skills 
+            &_block 
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 900px
+                margin-top: 40px
+                img 
+                    width: 100px
+                    height: 100px
+                &_text 
+                    margin-left: 10px
+                    width: 65%
+                    color: #ffffff
+                    border-bottom: 5px solid #fc7c13
+                    font-size: 23px
+                    font-weight: 500
+                    &_css
+                        border-bottom: 5px solid #1423ff
+                    &_js
+                        border-bottom: 5px solid #ffe714
+
 
 .footer 
     background: #355267
@@ -124,5 +145,12 @@ body
             background: none
             text-decoration: uppercase
 
+.active
+    background: #203748
+    box-shadow: 0 0 30px #2eb374
+    color: #ffffff 
+    a 
+        color: #ffffff
 
-        
+.content_active 
+    display: flex     
