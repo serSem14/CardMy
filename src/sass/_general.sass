@@ -1,5 +1,8 @@
 body
     background: #203748
+    min-height: 100vh
+    display: flex
+    flex-direction: column
 .nav 
     height: 57px
     background: #f04949
@@ -7,13 +10,15 @@ body
     display: flex
     &_wrapper
         &_ava 
-            width: 43px
-            height: 43px
+            width: 70px
             float: left
             margin: -4px 20px 0 0 
+            border-radius: 100%
+            overflow: hidden
             img
-                width: 43px
-                height: 43px
+                width: 100%
+                height: auto
+                display: block
         &_block     
             display: flex
             justify-content: center
@@ -48,13 +53,21 @@ body
                 margin-right: 5px
 
 .section
+    flex: 1
+    margin-bottom: 50px
     &_block
         display: none
         padding: 30px 0 0 0
+        margin-bottom: 50px
         &_ava
+            width: 388px
+            height: 153px
+            border-radius: 100%
+            overflow: hidden
             img
-                width: 200px
-                height: 186px
+                width: 100%
+                height: auto
+                display: block
         &_text
             &_header
                 font-size: 35px
@@ -124,13 +137,21 @@ body
                         border-bottom: 5px solid #1423ff
                     &_js
                         border-bottom: 5px solid #ffe714
-
+                    &_sass
+                        border-bottom: 5px solid #df009c
+                    &_bem
+                        border-bottom: 5px solid #1f52e3fc
+                    &_git
+                        border-bottom: 5px solid #ff2a14
+                    &_github
+                        border-bottom: 5px solid #23242c
+                    &_gulp
+                        border-bottom: 5px solid #d34545
 
 .footer 
     background: #355267
     min-height: 80px
-    position: absolute
-    bottom: 0
+    margin-top: auto
     width: 100%
     &_wrapper
         display: flex
@@ -153,4 +174,6 @@ body
         color: #ffffff
 
 .content_active 
-    display: flex     
+    display: flex    
+
+
