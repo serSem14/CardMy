@@ -152,7 +152,8 @@ body
 .section
     &_block
         &_works
-            display: flex
+            display: grid
+            grid-template: repeat(3, 200px) / 200px
             &_wrapperImg
                 width: 200px
                 height: 200px
@@ -167,8 +168,36 @@ body
                         transform: scale(1.1) 
                         opacity: 1
     
-    
-        
+.section
+    &_block  
+        position: relative
+        &_rezume
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            width: 100%
+            margin-top: 25%
+            &_text
+                color: #ffffff
+                font-size: 30px
+            &_file
+                width: 180px
+                height: 42px
+                line-height: 37px
+                text-align: center
+                text-decoration: none
+                font-size: 20px
+                color: #ffffff
+                background-color: #2eb374
+                border-radius: 25px
+                transition: .3s all
+                text-transform: uppercase
+                &:hover 
+                    background-color: #25915e
+                    color: #fbfde3
+                    box-shadow: 0 0 30px #da1919
+
 
 .footer 
     background: #355267
