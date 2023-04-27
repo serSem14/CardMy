@@ -198,6 +198,50 @@ body
                     color: #fbfde3
                     box-shadow: 0 0 30px #da1919
 
+.menu
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    background-color: rgba(71, 80, 121, .5) 
+    height: 100vh
+    width: 275px
+    flex-direction: column
+    position: fixed
+    right: 0
+    transform: translateX(100%)
+    transition: .7s all
+    z-index: 1
+    &_slide 
+        width: 270px
+        color: #fff
+        height: 100%
+        display: flex
+        align-items: center
+        &_simbol 
+            position: absolute
+            right: 10px
+            top: 0
+            font-size: 30px
+            cursor: pointer
+        &_elementrwraper
+            margin: 10px 0
+        &_emailwrapper 
+            display: flex
+            width: 200px
+        &_number
+            color: #ffffff
+            transition: .3s all
+            &:hover
+                color: #8d8d8d
+        &_email
+            padding-left: 10px
+            color: #ffffff
+        &_insta
+            color: #ffffff
+            transition: .3s all
+            &:hover
+                color: #919191
+
 
 .footer 
     background: #355267
